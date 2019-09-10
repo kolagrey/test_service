@@ -4,18 +4,6 @@ const { createUser, updateUser, getUser, getUsers, removeUser } = require('./use
 module.exports = {
     createUserHandler: async (req, res, next) => {
         // Extract payload from request body
-        /*
-            req.body expected payload format
-            {
-                name: String,
-                dob: {
-                    year: Number,
-                    month: Number,
-                    day: Number
-                },
-                location: String
-            }
-        */
         const { name, dob, location } = req.body;
 
         // date conversion using the dob object, expects object keys to be of type Number
@@ -116,19 +104,7 @@ module.exports = {
     },
 
     updateUserHandler: async (req, res, next) => {
-        // Extract payload from request body
-        /*
-           req.body expected payload format
-           {
-               name: String,
-               dob: {
-                   year: Number,
-                   month: Number,
-                   day: Number
-               },
-               location: String
-           }
-       */
+        // Extract payload from request body & params
         const { name, dob, location } = req.body;
         const { id } = req.params;
 
