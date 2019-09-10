@@ -4,24 +4,27 @@
 
 ### Clone the file using
 
-`
+```sh
 
 git clone https://github.com/kolagrey/test-service
 
-`
+```
 
 ### Install dependencies using
 
-`
+```sh
+
 npm install 
 
-`
+```
 
 ### Start the server using 
 
-`
+```sh
+    
     npm start
-`
+
+```
 
 This will start the server at http://localhost:3000
 
@@ -31,7 +34,8 @@ This will start the server at http://localhost:3000
 - [GET] http://localhost:3000/users --> Get all users
 - [GET] http://localhost:3000/user/:id --> Get user with the provided id
 - [PATCH] http://localhost:3000/user/:id --> Update user with the rovided id. Expects body to be an object 
-`
+```sh
+
     { 
         name: String, 
         dob: {
@@ -41,5 +45,6 @@ This will start the server at http://localhost:3000
         }, 
         location: String
     }
-`
+    
+```
 - [DELETE] http://localhost:3000/user/:id --> Delete's user with the provided id
