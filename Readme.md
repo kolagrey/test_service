@@ -74,7 +74,7 @@ This will start the server at http://localhost:3000
 - [PATCH] http://localhost:3000/v1/user/:id --> Update user with the rovided id. 
 ```sh
 
-    //Expects :id to be the _id field of this document
+    //Expects :id value to be from the _id field of this document
     // See below for example
 
     http://localhost:3000/v1/user/5d77e850f35d0a11e80b9004
