@@ -6,7 +6,7 @@
 
 ```sh
 
-git clone https://github.com/kolagrey/test-service
+git clone https://github.com/kolagrey/test_service
 
 ```
 
