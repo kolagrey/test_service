@@ -1,7 +1,7 @@
 const User = require('./user.model');
 const { createUser, updateUser, getUser, getUsers, removeUser } = require('./user.method');
 
-module.exports = {
+const userHandler = {
     createUserHandler: async (req, res, next) => {
         // Extract payload from request body
         const { name, dob, location } = req.body;
@@ -168,3 +168,5 @@ module.exports = {
         }
     }
 }
+
+module.exports = userHandler;
