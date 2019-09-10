@@ -5,7 +5,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/v1/user/5d77cbf0ab0ddd0dde95e469
+GET http://localhost:3000/v1/user/5d77e850f35d0a11e80b9004
 Content-Type: application/json
 
 ###
@@ -14,28 +14,28 @@ POST http://localhost:3000/v1/user
 Content-Type: application/json
 
 {
-    "name": "Temilade Ruby Grey",
+    "name": "Bisola Adams",
     "dob": {
-        "year": 2016,
-        "month": 12,
-        "day": 7
+        "year": 1989,
+        "month": 9,
+        "day": 10
     },
     "location": "Lagos, Nigeria"
 }
 ###
 
-PATCH http://localhost:3000/v1/user/5d77cbf0ab0ddd0dde95e469
+PATCH http://localhost:3000/v1/user/5d77e850f35d0a11e80b9004
 Content-Type: application/json
 
 
 {
-    "name": "Temi Grey",
+    "name": "Bisola Nneka Adams",
     "dob": {
         "year": 2016,
         "month": 12,
         "day": 7
     },
-    "location": "Lagos, Nigeria"
+    "location": "Abuja, Nigeria"
 }
 
 ###

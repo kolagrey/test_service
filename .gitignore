@@ -5,3 +5,5 @@
 .DS_Store
 Thumbs.db
 package-lock.json
+client.http
+docker-compose.yml
