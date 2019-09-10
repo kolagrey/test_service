@@ -1,6 +1,6 @@
 # Test Service API
 
-## How to use this file
+## How to use this repo
 
 ### Clone the file using
 
