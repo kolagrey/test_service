@@ -1,0 +1,46 @@
+###
+
+GET http://localhost:3000/v1/users
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/v1/user/5d77cbf0ab0ddd0dde95e469
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/v1/user
+Content-Type: application/json
+
+{
+    "name": "Temilade Ruby Grey",
+    "dob": {
+        "year": 2016,
+        "month": 12,
+        "day": 7
+    },
+    "location": "Lagos, Nigeria"
+}
+###
+
+PATCH http://localhost:3000/v1/user/5d77cbf0ab0ddd0dde95e469
+Content-Type: application/json
+
+
+{
+    "name": "Temi Grey",
+    "dob": {
+        "year": 2016,
+        "month": 12,
+        "day": 7
+    },
+    "location": "Lagos, Nigeria"
+}
+
+###
+
+DELETE http://localhost:3000/v1/user/5d77c3087e61d30c8ef81095
+Content-Type: application/json
+
+###
