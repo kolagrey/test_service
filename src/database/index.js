@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-const mongoDB_URI =  'mongodb://grey:1101grey3790@ds235437.mlab.com:35437/ashe_card_db'; //'mongodb://localhost:27017/andela_test_db'; // Note: Replace with a local MongoDB instance
+const mongoDB_URI =  'mongodb://grey:ju5st50mPa55w0rd@ds141368.mlab.com:41368/andela_test_db'; //'mongodb://localhost:27017/andela_test_db'; // Note: Replace with a local MongoDB instance
 // Connect to MongoDB, and log error if it occurs
 mongoose.connect(mongoDB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
     config: {
         autoIndex: false
     },
