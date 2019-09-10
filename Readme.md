@@ -30,7 +30,7 @@ This will start the server at http://localhost:3000
 
 ## Available Routes
 
-- [POST] http://localhost:3000/user --> Create new user.
+- [POST] http://localhost:3000/v1/user --> Create new user.
 ```sh
 
     // Example body payload
@@ -69,9 +69,9 @@ This will start the server at http://localhost:3000
 
     
 ```
-- [GET] http://localhost:3000/users --> Get all users
-- [GET] http://localhost:3000/user/:id --> Get user with the provided id
-- [PATCH] http://localhost:3000/user/:id --> Update user with the rovided id. 
+- [GET] http://localhost:3000/v1/users --> Get all users
+- [GET] http://localhost:3000/v1/user/:id --> Get user with the provided id
+- [PATCH] http://localhost:3000/v1/user/:id --> Update user with the rovided id. 
 ```sh
 
     //Expects :id to be the _id field of this document
@@ -92,4 +92,4 @@ This will start the server at http://localhost:3000
     }
 
 ```
-- [DELETE] http://localhost:3000/user/:id --> Delete's user with the provided id
+- [DELETE] http://localhost:3000/v1/user/:id --> Delete's user with the provided id
