@@ -6,15 +6,15 @@
 
 ```sh
 
-git clone https://github.com/kolagrey/test_service
+$ git clone https://github.com/kolagrey/test_service
 
 ```
 
 ### Install dependencies using
 
 ```sh
-
-npm install 
+$ cd test_service
+$ npm install 
 
 ```
 
@@ -22,7 +22,7 @@ npm install
 
 ```sh
     
-    npm start
+    $ npm start
 
 ```
 
