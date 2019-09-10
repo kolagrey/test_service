@@ -30,7 +30,22 @@ This will start the server at http://localhost:3000
 
 ## Available Routes
 
-- [POST] http://localhost:3000/user --> Create new user
+- [POST] http://localhost:3000/user --> Create new user.
+```sh
+
+    // Expected payload
+
+    { 
+        name: String, 
+        dob: {
+            year: Number, 
+            month: Number, 
+            day: Number
+        }, 
+        location: String
+    }
+    
+```
 - [GET] http://localhost:3000/users --> Get all users
 - [GET] http://localhost:3000/user/:id --> Get user with the provided id
 - [PATCH] http://localhost:3000/user/:id --> Update user with the rovided id. Expects body to be an object 
@@ -45,6 +60,6 @@ This will start the server at http://localhost:3000
         }, 
         location: String
     }
-    
+
 ```
 - [DELETE] http://localhost:3000/user/:id --> Delete's user with the provided id
