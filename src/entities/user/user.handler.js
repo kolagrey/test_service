@@ -31,7 +31,7 @@ module.exports = {
                 if (newUser.hasError) {
                     res.status(400).json({
                         message: 'User not created',
-                        error: newUser.errors
+                        error: newUser.error
                     });
                 } else {
                     res.status(201).json({
@@ -63,7 +63,7 @@ module.exports = {
             if (users.hasError) {
                 res.status(400).json({
                     message: 'Users not found',
-                    error: users.errors
+                    error: users.error
                 });
             } else {
                 res.status(200).json({
@@ -91,7 +91,7 @@ module.exports = {
                 if (user.hasError) {
                     res.status(400).json({
                         message: 'User not found',
-                        error: user.errors
+                        error: user.error
                     });
                 } else {
                     res.status(200).json({
